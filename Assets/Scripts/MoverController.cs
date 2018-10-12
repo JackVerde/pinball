@@ -20,8 +20,8 @@ public class MoverController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         Transform trans = GetComponent<Transform>();
-        Debug.Log(originalX + translateBy);
-        Debug.Log(trans.position.x );
+        //Debug.Log(originalX + translateBy);
+        //Debug.Log(trans.position.x );
         if ((trans.position.x < originalX + translateBy) && forward)
         {
             trans.Translate(new Vector3((float)0.01*speed, 0, 0));
